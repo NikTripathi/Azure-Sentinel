@@ -38,3 +38,10 @@ export class PlaybookValidationError extends Error implements ValidationError {
     super(message);
   }
 }
+
+export class SampleDataValidationError extends Error implements ValidationError {
+  public name = "SampleDataValidationError";
+  constructor(message?: string) {
+    super(message);
+  }
+}
